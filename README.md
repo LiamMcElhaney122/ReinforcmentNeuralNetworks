@@ -1,9 +1,11 @@
-# Reinforcment Neural Networks
+# Reinforcement Neural Networks
 
-This is a c# implementation of using neural networks with reinforment learning. Instead of the traditional, gradient optimized DNN's, RL neural networks use evolving networks that breed and muttate their weights, biases, activation functions, and layer counts and sizes to create ever evolving networks.
+This is a C# implementation of a reinforcement learning neural network.
+
+Instead of a traditional gradient optimized DNN, RL neural networks use evolving networks that breed and mutate. Their weights, biases, activation functions, layer counts, and sizes constantly change to create ever evolving networks.
 
 
-Start by writing a function to create networks.
+Start by writing a function to create networks:
 ```csharp
 
   const int inputLayerSize = 3; 
@@ -25,18 +27,18 @@ Start by writing a function to create networks.
     return networks 
   }
   ```
-  Once created, networks can run in a loop. Every iteration, they should be evaluated, and a selection method chosen.
+Once created, networks can run in a loop. With each iteration they should be evaluated and have a selection method chosen.
   
   
   ```csharp
   
   foreach(var n in Networks){
-    //many fitness functions exist, none are provided, although you can create them easily
+    //many fitness functions exist, and though none are provided they can be easily created
     fitness_func(n.feedNetwork(input_array))
   }
   ```
   
-  After killing the worst networks, the new best networks can be bred and/or mutated
+  After killing off the worst networks, the remaining networks can be bred and/or mutated.
   
   
   ```csharp
