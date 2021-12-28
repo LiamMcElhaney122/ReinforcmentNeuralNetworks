@@ -1,4 +1,4 @@
-# ReinforcmentNeuralNetworks
+# Reinforcment Neural Networks
 
 This is a c# implementation of using neural networks with reinforment learning. Instead of the traditional, gradient optimized DNN's, RL neural networks use evolving networks that breed and muttate their weights, biases, activation functions, and layer counts and sizes to create ever evolving networks.
 
